@@ -10,7 +10,7 @@ class AppModule extends WFMModule {
 
 export const appModule = new AppModule({
 	components: [
-		appComponent,
 		appHeader
-	]
+	],
+	bootstrap: appComponent
 })
