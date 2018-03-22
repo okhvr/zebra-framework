@@ -1,11 +1,7 @@
-const wfm = {
-    delay(ms = 1000){
-        return new Promise((resolve, reject) => {
-            setTimeout(() =>{
-                resolve();
-            }, ms)
-        })
-    }
+const zebra = { 
+        isUndefined(path){
+            return typeof path === 'undefined';
+        }
 }
 
-export { wfm }
+export { zebra }

@@ -1,8 +1,10 @@
-import { WFMModule } from '../Zebra-framework';
+import { ZebraModule } from '../Zebra-framework';
 import { appComponent } from './app.component';
 import { appHeader } from './common/app.header';
+import { appRoutes } from './app.routes';
+import { contactUsComponent } from './pages/contact-us.component';
 
-class AppModule extends WFMModule {
+class AppModule extends ZebraModule {
 	constructor(config) {
 		super(config)
 	}
@@ -10,7 +12,9 @@ class AppModule extends WFMModule {
 
 export const appModule = new AppModule({
 	components: [
-		appHeader
+		appHeader,
+		contactUsComponent
 	],
-	bootstrap: appComponent
-})
+	bootstrap: appComponent,
+	routes: appRoutes 
+});

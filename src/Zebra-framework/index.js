@@ -1,12 +1,14 @@
-import { Module  as WFMModule} from './core/module';
-import {Component as WFMComponent} from './core/component';
+import { Module  as ZebraModule} from './core/module';
+import { Component as ZebraComponent} from './core/component';
 import { bootstrap} from './core/bootstrap';
-import {wfm } from './tools/util';
+import { zebra } from './tools/util';
+import{ router } from './tools/router';
 
 
 export {
-	WFMModule,
-	WFMComponent,
+	ZebraModule,
+	ZebraComponent,
 	bootstrap,
-	wfm
+	zebra,
+	router
 }
